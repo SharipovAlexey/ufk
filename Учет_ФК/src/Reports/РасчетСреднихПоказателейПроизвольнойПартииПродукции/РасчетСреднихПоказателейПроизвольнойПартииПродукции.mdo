@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d5fc7238-a6bf-4413-8795-eb800a015311">
+  <producedTypes>
+    <objectType typeId="08eace45-5acd-4f8e-8998-d53b502b41d3" valueTypeId="77c8c380-8c23-41b5-b2ed-ade9da0e6442"/>
+    <managerType typeId="e2a6c518-1be2-4ae4-9b06-ee8229ed5182" valueTypeId="09de0e08-36e5-431b-a898-2a4ad6f9c439"/>
+  </producedTypes>
+  <name>РасчетСреднихПоказателейПроизвольнойПартииПродукции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет средних показателей произвольной партии продукции</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.РасчетСреднихПоказателейПроизвольнойПартииПродукции.Form.ФормаОтчета</defaultForm>
+  <attributes uuid="b5f35134-836a-493d-ad8d-8136d71b6ac5">
+    <name>Влажность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Влажность, %</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d444a8b0-5b5b-40fa-9f05-b8d8c906e623">
+    <name>СодержаниеAu</name>
+    <synonym>
+      <key>ru</key>
+      <value>Au, г/т</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="96b27e32-af01-4138-a776-43cb749d3a96">
+    <name>СодержаниеAg</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ag, г/т</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b9942c53-4d2a-4041-97b7-0c5cd23202d6">
+    <name>ПримесиSобщ</name>
+    <synonym>
+      <key>ru</key>
+      <value>S общ,%</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5138962d-157d-4b85-996c-3e47d4731f1d">
+    <name>ПримесиCорг</name>
+    <synonym>
+      <key>ru</key>
+      <value>C орг,%</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="89aea88f-14e5-4ffa-9017-f4ca780116b9">
+    <name>ПримесиAs</name>
+    <synonym>
+      <key>ru</key>
+      <value>As,%</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a0cbe221-4f1f-4587-8f48-e4f5fb6859c7">
+    <name>ПримесиFe</name>
+    <synonym>
+      <key>ru</key>
+      <value>Fe,%</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1547897c-9dd6-4e65-b86a-5802346c6c93">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <tabularSections uuid="3cd1e94e-f7ee-4998-8018-53a0a0759654">
+    <producedTypes>
+      <objectType typeId="2542aeca-10df-4f9c-b9a4-63d15f83c67e" valueTypeId="629d87c6-9ed2-4a9d-85f0-e9ce1222a956"/>
+      <rowType typeId="d7111b6e-c92a-4973-896d-a8bb379dc6a4" valueTypeId="ac3f9332-ba7c-4a32-b0e9-59075a3345d5"/>
+    </producedTypes>
+    <name>ТранспортировочныеМеста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортировочные места</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="af2a1a30-75b3-4600-8018-def0d9039636">
+      <name>ТранспортировочноеМесто</name>
+      <synonym>
+        <key>ru</key>
+        <value>Транспортировочное место</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ТранспортировочныеМеста</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a33720bb-7137-4af5-9f85-58dda614ffb8">
+      <name>ВесБруттоВлажный</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вес брутто влажный, кг</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="5004d609-639f-4e6d-8792-64d468c872d7">
+      <name>ВесНеттоВлажный</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вес нетто влажный, кг</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="77a27577-5c12-4e21-9ab4-b46531c569b3">
+      <name>ВесНеттоСухой</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вес нетто сухой, кг</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="df972ee8-8993-4cfd-9fdd-d1a19a473fcb">
+      <name>НомерПломбы</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер пломбы</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="d9064492-7e11-4fb0-9ec3-60cef4b29cb2">
+      <name>Au</name>
+      <synonym>
+        <key>ru</key>
+        <value>Au, кг</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>5</scale>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="4d297c9e-2eb3-4cc4-a0e3-c395e93e80fb">
+      <name>Ag</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ag, кг</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>5</scale>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="b9d0ac82-a5ac-4d85-a19b-f56ee508e588">
+      <name>Sобщ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Sобщ, т</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="50d119f6-28a2-4b88-a999-faa7249c0fcb">
+      <name>Сорг</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сорг, т</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="403ee4ed-2ea1-4883-990b-52edddb6512c">
+      <name>As</name>
+      <synonym>
+        <key>ru</key>
+        <value>As, т</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a9528373-5ea3-4461-bfe1-c0c86b3fcc67">
+      <name>Fe</name>
+      <synonym>
+        <key>ru</key>
+        <value>Fe, т</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="7d3c0585-f517-4856-883e-8e3781572855">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="9fc43acb-14b6-4120-babe-2f4fe98c5e21">
+    <name>MXL_ПаспортЛотаПродукции</name>
+    <synonym>
+      <key>ru</key>
+      <value>MXL паспорт лота продукции</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+</mdclass:Report>

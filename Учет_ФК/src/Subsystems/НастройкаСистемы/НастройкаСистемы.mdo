@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="986381e1-2943-4e9f-8c25-ec2781647df1">
+  <name>НастройкаСистемы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройка системы</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Constant.ОсновнаяНоменклатура</content>
+  <content>DataProcessor.ПодборТранспортировочногоМеста</content>
+  <content>CommonCommand.НастройкаИнтерфейса</content>
+  <content>Constant.ОкончаниеСервисногоВремени</content>
+  <content>Constant.НачалоСервисногоВремени</content>
+  <content>CommonModule.УправлениеСоединениямиИБ</content>
+  <content>CommonForm.ДополнительныеНастройкиУчета</content>
+  <content>DataProcessor.ПодборТранспортировочногоМестаИзТранспортировки</content>
+  <content>CommonCommand.ПерсональныеНастройки</content>
+  <content>CommonForm.ПерсональныеНастройки</content>
+  <content>AccumulationRegister.ПереработкаПродукции</content>
+</mdclass:Subsystem>

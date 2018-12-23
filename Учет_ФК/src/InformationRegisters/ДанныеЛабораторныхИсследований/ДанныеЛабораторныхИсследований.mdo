@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9c0b0bad-9f31-4b8b-a950-36d8b9b9da65">
+  <producedTypes>
+    <selectionType typeId="81076f16-0938-437d-b6f3-9833686533d5" valueTypeId="9ac415f2-6a5d-4b91-baad-0f8dc58e55de"/>
+    <listType typeId="aaab33f5-27c1-4df0-aba8-8212cfc47af5" valueTypeId="b7094f5a-7155-40f1-b109-f137c4e55fec"/>
+    <managerType typeId="e51c6d84-04f5-4e27-b5b5-c8139ffc716a" valueTypeId="7e923ea8-148f-46a5-9178-eb05103d45e7"/>
+    <recordSetType typeId="d38885cb-8ee2-4b9a-bb52-ef6b8b6fdc24" valueTypeId="80c70b39-8974-418d-b712-b6b00e490df4"/>
+    <recordKeyType typeId="b7781663-b86d-4fb0-ac7c-c01f3f3078d4" valueTypeId="ea9ab477-ec27-48c8-babd-7e74081bc7d8"/>
+    <recordType typeId="cb841c8c-7f47-4ce7-a104-7beb85a63e4a" valueTypeId="ed85e0c9-6b1a-4d29-bb3e-866dabc5754c"/>
+    <recordManagerType typeId="9dcf7889-5d36-481d-bd34-0558c2e6ef8b" valueTypeId="0f72acb0-6a1e-436e-a02a-121dd7c84551"/>
+  </producedTypes>
+  <name>ДанныеЛабораторныхИсследований</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные лабораторных исследований</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="eb3d595a-963a-4b8a-8b3f-9c0ea3112732">
+    <name>СодержаниеAu</name>
+    <synonym>
+      <key>ru</key>
+      <value>Содержание Au, г/т</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b1c134e7-aaf6-4a31-a413-9b89b1a52cb8">
+    <name>ПоказательТочностиСодержанияAu</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель точности содержания Au</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="690a23e2-bfff-4503-a42f-09b0a3664e02">
+    <name>СодержаниеAg</name>
+    <synonym>
+      <key>ru</key>
+      <value>Содержание Ag</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="479b7015-d49c-47cd-9126-8cb6632bac7d">
+    <name>ПоказательТочностиСодержанияAg</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель точности содержания Ag</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="35dabca1-41e4-486a-b7ef-8d124fddb00d">
+    <name>ПримесиSобщ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Примеси S общ,%</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="619ee0d3-e416-4e64-a39c-3000132bf046">
+    <name>ПоказательТочностиПримесиSобщ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель точности примеси S общ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="58d1f4e3-5488-44ae-bfdd-cf317b4c6453">
+    <name>ПримесиCорг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Примеси C орг,%</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="23679c1f-6d00-4c8f-a3d9-75cd759dbdec">
+    <name>ПоказательТочностиПримесиCорг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель точности примеси C орг</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1cc09a31-8f69-4c4e-a18d-330a9e47f956">
+    <name>ПримесиAs</name>
+    <synonym>
+      <key>ru</key>
+      <value>Примеси As,%</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f8dc2aa8-c559-4f40-98c2-6c906374d7ce">
+    <name>ПоказательТочностиПрмесиAs</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель точности примеси As</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bf98d8be-5f86-4700-8dc8-89e5fcdbccc9">
+    <name>ПримесиFe</name>
+    <synonym>
+      <key>ru</key>
+      <value>Примеси Fe,%</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="11eef904-4faf-4b78-b378-ca125f3308ba">
+    <name>ПоказательТочностиПрмесиFe</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель точности примеси Fe</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="10ae1a64-c2a7-41c1-ba81-04dd96cb75b8">
+    <name>ЛабораторнаяПроба</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лабораторная проба</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ЛабораторныеПробы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="312b3879-186c-4ae8-9129-c3dbfdcbfdbb">
+    <name>Партия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ПартииПродукции</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

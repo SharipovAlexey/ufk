@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ff922b60-aed0-4674-b7e5-f0e107de6222">
+  <producedTypes>
+    <objectType typeId="c3c271f3-3359-4bfd-96d4-52b8bc528107" valueTypeId="c05589dd-615f-4c42-81c4-277267fc454e"/>
+    <refType typeId="02ec42d7-91b9-475c-89ba-e192cad10712" valueTypeId="0e3a865b-6f36-432d-803e-a001f241c400"/>
+    <selectionType typeId="7c4c0581-98bf-4b93-819a-5f2d1b255640" valueTypeId="1def7abd-5cbf-45ba-86e2-12ea826d4444"/>
+    <listType typeId="b9a2d8fe-bfe1-49f7-aecf-35018879b85a" valueTypeId="645f0669-52d3-42ac-83ec-61e99c0ca650"/>
+    <managerType typeId="40468a9f-36df-4c86-8838-6e06ce63f1ac" valueTypeId="0b6f41f9-5938-49f0-bf50-89a494d5a393"/>
+  </producedTypes>
+  <name>ПричиныОтказаВПриемеПродукции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Причины отказа в приеме продукции</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ПричиныОтказаВПриемеПродукции.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ПричиныОтказаВПриемеПродукции.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="d5feabc2-69a3-4ef0-9690-3db3a29c7a03">
+      <name>НеОтгруженПоставщиком</name>
+      <description>Не отгружен поставщиком</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ПричиныОтказаВПриемеПродукции.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ПричиныОтказаВПриемеПродукции.Form.ФормаСписка</defaultListForm>
+  <forms uuid="c3365dcc-48ee-4474-a526-83d713a95ac3">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0bcccca9-8bfe-4937-bc17-596e879e61e3">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

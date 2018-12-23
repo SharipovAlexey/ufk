@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="34c4ebea-43d2-4018-8d22-adc6f82a6c72">
+  <name>Производство</name>
+  <synonym>
+    <key>ru</key>
+    <value>Производство</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Производство</picture>
+  </picture>
+  <content>AccumulationRegister.ОстаткиПродукцииНаСкладе</content>
+  <content>Enum.СтатусыПартииПродукции</content>
+  <content>InformationRegister.ДанныеЗатаркиТранспортировочныхМест</content>
+  <content>InformationRegister.ДанныеПаспортовКачества</content>
+  <subsystems>Отчеты</subsystems>
+  <subsystems>ВыпускПродукции</subsystems>
+  <subsystems>ПереработкаПродукции</subsystems>
+</mdclass:Subsystem>

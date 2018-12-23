@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fa0b8319-9eea-4d61-9d45-7eb9114012e3">
+  <name>Логистика</name>
+  <synonym>
+    <key>ru</key>
+    <value>Логистика</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ТранспортировочныеМеста</content>
+  <content>Catalog.Склады</content>
+  <content>Catalog.ТранспортныеСредства</content>
+  <content>Catalog.ПричиныОтказаВПриемеПродукции</content>
+  <content>Catalog.Водители</content>
+  <content>Catalog.МоделиАвтотранспорта</content>
+  <content>Catalog.ВидыНарушенийПриТранспортировке</content>
+  <parentSubsystem>Subsystem.НСИ</parentSubsystem>
+</mdclass:Subsystem>

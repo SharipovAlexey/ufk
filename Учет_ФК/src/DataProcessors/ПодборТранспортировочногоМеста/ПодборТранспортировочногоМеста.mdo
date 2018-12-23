@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5c3544ab-ffde-47d6-a00f-1960c949e4f7">
+  <producedTypes>
+    <objectType typeId="23b70cb8-532d-45f1-a08f-9a5686ce9525" valueTypeId="da9ae9af-408d-4937-9bf6-a28f072045e3"/>
+    <managerType typeId="31d7fb20-56ff-42c2-85a5-ad36935d9432" valueTypeId="73d12676-4762-4cc0-b9ad-1f7709c4407b"/>
+  </producedTypes>
+  <name>ПодборТранспортировочногоМеста</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подбор транспортировочного места</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПодборТранспортировочногоМеста.Form.Форма</defaultForm>
+  <tabularSections uuid="a5eebf16-8596-44cd-a631-9fb766104bbd">
+    <producedTypes>
+      <objectType typeId="e5dfa218-b748-4c2b-86a6-fedcfff24990" valueTypeId="1a22fb0a-5c04-4701-b587-09d031d20eb1"/>
+      <rowType typeId="e7af4c37-996f-4ebc-a4d0-e0a873308bba" valueTypeId="10ae3a6d-687b-46d4-b755-d139d5cd7ded"/>
+    </producedTypes>
+    <name>ПодобранныеТранспортировочныеМеста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подобранные транспортировочные места</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="f6ea239a-82fe-4108-9569-8ca3597f0048">
+      <name>ТранспортировочноеМесто</name>
+      <synonym>
+        <key>ru</key>
+        <value>Транспортировочное место</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ТранспортировочныеМеста</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="7173e13f-36cd-44d2-b4cf-538c913292b2">
+      <name>ПартияПродукции</name>
+      <synonym>
+        <key>ru</key>
+        <value>Партия продукции</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ПартииПродукции</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="2a0f853e-5fec-4abb-9e73-c9988d2ca349">
+      <name>ВесБруттоВлажный</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вес брутто влажный, кг</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="1cfe9fe2-3963-473d-b6ca-abbfe6274647">
+      <name>ВесНеттоВлажный</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вес нетто влажный, кг</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="b039a263-05bd-4fab-b513-9976453a1ec1">
+      <name>НомерПломбы</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер пломбы</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="35859042-68e0-42ad-94d3-e0ffcbc145ae">
+      <name>НомерМестаВПартии</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер места в партии</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="3a5c7a87-a926-4e75-9c69-e9dab634412d">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

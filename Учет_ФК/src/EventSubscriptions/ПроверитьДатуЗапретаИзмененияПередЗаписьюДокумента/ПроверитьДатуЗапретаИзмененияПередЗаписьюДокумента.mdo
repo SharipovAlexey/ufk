@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a17d0da7-76e5-480f-8c95-3aceb2a3a56e">
+  <name>ПроверитьДатуЗапретаИзмененияПередЗаписьюДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверить дату запрета изменения перед записью документа</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>DocumentObject.ПаспортКачестваНаПартиюПродукции</types>
+    <types>DocumentObject.ПоступлениеПродукцииИзТранспортировки</types>
+    <types>DocumentObject.ВнутреннееПеремещениеПродукции</types>
+    <types>DocumentObject.ВыпускПродукции</types>
+    <types>DocumentObject.ПроведениеЛабораторныхИсследований</types>
+    <types>DocumentObject.КорректировкаДвиженийРегистров</types>
+    <types>DocumentObject.ТранспортировкаПродукции</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ДатыЗапретаИзменения.ПроверитьДатуЗапретаИзмененияПередЗаписьюДокумента</handler>
+</mdclass:EventSubscription>

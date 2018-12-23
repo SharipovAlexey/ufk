@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f863352f-707c-4202-8c91-24bd6ad6fb5b">
+  <producedTypes>
+    <selectionType typeId="fe7438a2-d5cc-481a-aee0-3319a9c2ddc3" valueTypeId="5d8137c1-37e3-4759-867a-09dbccc66175"/>
+    <listType typeId="326477e2-a645-4a16-89eb-76182c9d10f9" valueTypeId="eeaf7b15-77a8-4dbb-9cee-2cc5f23cc252"/>
+    <managerType typeId="61983f51-c52e-4a7e-922e-9ce1c423e082" valueTypeId="8acc9968-b966-4053-bdb3-7c628cd3280c"/>
+    <recordSetType typeId="0351cc31-1362-45b8-8ac7-0ed9298f2445" valueTypeId="150c533e-7f5a-4f7a-8d0b-1c90ccd29a0a"/>
+    <recordKeyType typeId="4e7029c3-ff8d-475c-b673-56399e029990" valueTypeId="9cdddf05-d4cd-453c-a602-fbbcbf6ef48d"/>
+    <recordType typeId="f5dfde8f-4dfe-46ee-befc-d21ecca978e5" valueTypeId="d5b01cd7-2363-47f7-b4dc-d6110ce85965"/>
+    <recordManagerType typeId="d555b40f-194e-446a-9fe9-21858deb7f99" valueTypeId="588d9a23-82e9-4446-b8bd-d21c31194dde"/>
+  </producedTypes>
+  <name>ДанныеПаспортовКачества</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные паспортов качества</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="048f1857-66e6-4817-8480-56ae13aac4b9">
+    <name>ПаспортКачества</name>
+    <synonym>
+      <key>ru</key>
+      <value>Паспорт качества</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.ПаспортКачестваНаПартиюПродукции</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9242cffd-6731-4235-aa33-42dfb5ae7305">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="897b449c-6820-4382-b3db-16f77cafaa12">
+    <name>ПартияПродукции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия продукции</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ПартииПродукции</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

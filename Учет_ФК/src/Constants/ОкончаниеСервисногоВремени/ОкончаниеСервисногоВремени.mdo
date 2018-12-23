@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bc400134-2be9-46f5-ad6c-62355e58a19c">
+  <producedTypes>
+    <managerType typeId="ee95362f-52d3-4d38-bb73-6ad08bf7485d" valueTypeId="d20b427b-20fb-463c-a616-691f6d87f06c"/>
+    <valueManagerType typeId="0148c17d-5670-4b0d-ac24-3ca8593dc4bc" valueTypeId="99328bf2-8310-4255-9b60-e81182837674"/>
+  </producedTypes>
+  <name>ОкончаниеСервисногоВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Окончание сервисного времени</value>
+  </synonym>
+  <comment>Время отключения клиентских сеансов</comment>
+  <type>
+    <types>Date</types>
+    <dateQualifiers>
+      <dateFractions>Time</dateFractions>
+    </dateQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+</mdclass:Constant>

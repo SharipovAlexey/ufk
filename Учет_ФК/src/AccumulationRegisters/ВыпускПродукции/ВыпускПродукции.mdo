@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e1cb591-bc65-4f30-8e82-1a9838eb481a">
+  <producedTypes>
+    <selectionType typeId="61bf3708-97a7-4570-8a09-161aba5358fa" valueTypeId="96f7b0fa-ada4-4069-9011-396cdb21adb9"/>
+    <listType typeId="b4649d14-68a3-44b7-b937-c88cf5d734bb" valueTypeId="bd9271d5-6644-45ee-867e-fe696441f994"/>
+    <managerType typeId="88358612-0c95-4bcf-86ff-de32ed3a60ca" valueTypeId="1ea8c729-b655-4ecd-b39b-bb44a78f3884"/>
+    <recordSetType typeId="b21cda01-d2fe-4429-9ea4-6d9402f4c634" valueTypeId="91406b87-dce3-4c5c-a020-00334aca6c32"/>
+    <recordKeyType typeId="f6eab095-d1ef-4fae-81f8-f88582f8bd62" valueTypeId="1aecc615-c616-4c92-b02c-7e0cf233627d"/>
+    <recordType typeId="c0af38f6-782d-45a2-ae52-c217b2926e66" valueTypeId="1aa01b38-bf1b-4eeb-a066-d210ff524e02"/>
+  </producedTypes>
+  <name>ВыпускПродукции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выпуск продукции</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="7a891974-fb34-40a1-bb21-a17429199b58">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="debccefc-17d1-428f-a619-64e16243492f">
+    <name>ВесБруттоВлажный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес брутто влажный, кг</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="5a4076a9-2613-4e7a-85f8-b3d68d9cedd8">
+    <name>ВесНеттоВлажный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес нетто влажный, кг</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="98153d8a-af1e-4020-9b8f-ae2d72c07e35">
+    <name>ВесНеттоСухой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес нетто сухой, кг</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="19de31ca-f4db-449f-a299-4b10c510ce2a">
+    <name>Влажность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Влажность</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="ca209370-0f88-4f48-8139-0f212450c49a">
+    <name>МестВПартии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество мест в партии</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="0172b3d5-7a9e-40c8-9a1e-0d23935f67b8">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f8a7b9a5-cb9e-47c1-b5e0-89e6b8eca722">
+    <name>ПартияПродукции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия продукции</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ПартииПродукции</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="00003a06-f298-46e2-93e2-a62e6c098471">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

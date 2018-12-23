@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1b39e76f-e6df-4cce-bc11-6464de23f720">
+  <producedTypes>
+    <objectType typeId="f5ab19ab-6ea2-42a1-861c-d23bb7fbe550" valueTypeId="fcae0cb7-ee47-4df0-ac4b-42593261a266"/>
+    <managerType typeId="bb729f15-ed49-4018-b525-3dfd772b8f7e" valueTypeId="7d8de25d-c471-4f0c-be85-02c73d65cadc"/>
+  </producedTypes>
+  <name>ОтчетПоПартиямЗаПериод</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по партиям за период</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ОтчетПоПартиямЗаПериод.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="fe47b1c1-19bf-48c6-b344-a7695187d86d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

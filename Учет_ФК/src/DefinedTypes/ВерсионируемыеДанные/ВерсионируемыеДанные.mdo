@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="83db1b00-e9e3-41da-8a59-47589dcfd618">
+  <producedTypes>
+    <containerType typeId="5d1dba8c-a53b-4334-ad62-baec2d367d0d" valueTypeId="4929d63f-d79a-44fe-9cfb-11695928a97a"/>
+  </producedTypes>
+  <name>ВерсионируемыеДанные</name>
+  <synonym>
+    <key>ru</key>
+    <value>Версионируемые данные</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>CatalogRef.Контрагенты</types>
+    <types>CatalogRef.ПричиныОтказаВПриемеПродукции</types>
+    <types>CatalogRef.ТранспортныеСредства</types>
+    <types>DocumentRef.ТранспортировкаПродукции</types>
+    <types>DocumentRef.ВыпускПродукции</types>
+    <types>DocumentRef.ПаспортЛота</types>
+    <types>DocumentRef.АктПриемаПродукцииЗаПериод</types>
+    <types>CatalogRef.МоделиАвтотранспорта</types>
+    <types>CatalogRef.ДоговорыКонтрагентов</types>
+    <types>CatalogRef.ТранспортировочныеМеста</types>
+    <types>DocumentRef.ПаспортПартииРеализации</types>
+    <types>DocumentRef.ВнутреннееПеремещениеПродукции</types>
+    <types>DocumentRef.ФормированиеПартийПродукцииДляПереработки</types>
+    <types>DocumentRef.ПоступлениеПродукцииИзТранспортировки</types>
+    <types>CatalogRef.Водители</types>
+    <types>CatalogRef.Номенклатура</types>
+    <types>CatalogRef.Склады</types>
+    <types>DocumentRef.ПередачаПродукцииВПереработку</types>
+    <types>CatalogRef.Организации</types>
+    <types>DocumentRef.СписаниеПродукции</types>
+    <types>DocumentRef.ПаспортКачестваНаПартиюПродукции</types>
+    <types>CatalogRef.ЛабораторныеПробы</types>
+    <types>DocumentRef.ПроведениеЛабораторныхИсследований</types>
+    <types>CatalogRef.ПартииПродукции</types>
+    <types>DocumentRef.КорректировкаДвиженийРегистров</types>
+    <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
+  </type>
+</mdclass:DefinedType>

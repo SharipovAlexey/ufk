@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="75c0b44b-ece4-425f-b5bb-f2548cee6336">
+  <producedTypes>
+    <objectType typeId="afd9625c-414d-42a0-9bb3-7a54c270582a" valueTypeId="2a301294-ab69-40f7-b75b-a6e81a902fac"/>
+    <refType typeId="785458eb-f785-48df-bbc2-320311e3312e" valueTypeId="3165478a-16b4-41ab-9d89-607a4a979c05"/>
+    <selectionType typeId="b4789bc1-945c-46e1-a472-0f93442ffa0b" valueTypeId="dc36e62a-a04e-464b-97f3-8dc23c08777d"/>
+    <listType typeId="7a86a6eb-3214-4fac-8202-2256c6c0fe0b" valueTypeId="7fe69c58-872a-40f3-abd8-1029f9863cc6"/>
+    <managerType typeId="c9ae460f-f50c-4e57-a394-211fb907fafc" valueTypeId="d9ae6f99-e415-4a35-8fb0-f31edfab634a"/>
+  </producedTypes>
+  <name>ТранспортировочныеМеста</name>
+  <synonym>
+    <key>ru</key>
+    <value>Транспортировочные места</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТранспортировочныеМеста.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ТранспортировочныеМеста.Attribute.ИдентификаторТранспортировочногоМеста</inputByString>
+  <searchStringModeOnInputByString>AnyPart</searchStringModeOnInputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ТранспортировочныеМеста.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ТранспортировочныеМеста.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ТранспортировочныеМеста.Form.ФормаВыбора</defaultChoiceForm>
+  <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  <attributes uuid="6e9c017c-9cea-4048-913a-0e005c0873af">
+    <name>ИдентификаторТранспортировочногоМеста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор транспортировочного места</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="734741cb-7995-4f84-90a0-14e8b41cbdb8">
+    <name>ИдентификаторТранспортировочногоМеста1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор транспортировочного места1</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="15619e22-0d5d-4f41-8280-de999ae3e233">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5611a969-7ffc-4fcb-af66-54e7493fdc10">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9c78a53d-8683-4705-8d24-4b24c694e19f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

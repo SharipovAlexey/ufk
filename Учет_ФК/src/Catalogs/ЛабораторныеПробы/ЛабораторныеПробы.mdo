@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7e47e846-ca38-40b1-aed5-709d121ba1f0">
+  <producedTypes>
+    <objectType typeId="e7e85ef7-52fe-45fe-af6a-cf809d04fff5" valueTypeId="007ade69-3a4a-4a98-a1d4-28e2a6a64064"/>
+    <refType typeId="de078d5f-75da-464a-bd1b-22bf86a33ddb" valueTypeId="c2eeb01d-7ec1-4e47-8868-cbcd7a940e1b"/>
+    <selectionType typeId="49bd0cd8-9048-49bb-873e-dfcfc904a019" valueTypeId="06cd8026-44c0-46ef-bec5-f33b56d970a7"/>
+    <listType typeId="32342880-605f-46f0-b927-69905d0c179f" valueTypeId="d66e7316-6fa5-407c-a667-6c0bb4b988fa"/>
+    <managerType typeId="52e33fb6-f8e8-49c4-8889-39963016bed6" valueTypeId="bf40d773-9900-48d7-8ceb-782b24197cd8"/>
+  </producedTypes>
+  <name>ЛабораторныеПробы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лабораторные пробы</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЛабораторныеПробы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЛабораторныеПробы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ЛабораторныеПробы.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="19b80a25-c3b6-4e50-bbaa-dfd685368cb7">
+    <name>НомерПробы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер пробы</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c9558154-9df4-4f63-9f17-e0f0c2a3047b">
+    <name>ПартияПродукции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия продукции</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ПартииПродукции</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="37c2d06d-f381-4a84-8eb1-0fbd4b1f42f2">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

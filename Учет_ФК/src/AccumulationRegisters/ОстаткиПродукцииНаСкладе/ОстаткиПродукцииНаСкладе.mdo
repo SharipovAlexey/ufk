@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8c73dcd1-21cd-4aef-a484-078fd81cf1a4">
+  <producedTypes>
+    <selectionType typeId="a90733a1-106d-4e74-a526-c5c6b5a79ffe" valueTypeId="76a8f756-9892-4877-aa5c-c8911c3af34e"/>
+    <listType typeId="c22d0721-7246-4c48-92ae-fa99b9625e1c" valueTypeId="8de03b28-ac6b-47ad-84a3-d9e7be2c5dec"/>
+    <managerType typeId="10b56280-e563-4403-a83e-fed7723922d0" valueTypeId="a898541b-6272-449a-b3ec-dbe46c4f22b1"/>
+    <recordSetType typeId="92d2da7f-38a9-411d-a02b-826a34534aea" valueTypeId="733a5c3a-fde0-4f91-b02a-c54c762e5df1"/>
+    <recordKeyType typeId="73634f6d-4cb7-4a16-b33a-b9d978f68da9" valueTypeId="b959faf8-fce6-4b87-b697-84535c70bfe9"/>
+    <recordType typeId="a93070c8-4d1a-44eb-8328-fcea4adb79c8" valueTypeId="72e7aa9c-2bfc-413c-8765-5df969b37997"/>
+  </producedTypes>
+  <name>ОстаткиПродукцииНаСкладе</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки продукции на складе</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="01096840-cd4e-4e44-882e-5231a445d1c4">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="f5836f25-704e-40d9-bad7-681d152c540a">
+    <name>КоличествоМест</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество мест</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="7aead058-bc30-466f-ac30-e462ed9477a0">
+    <name>ВесБруттоВлажный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес брутто влажный, кг</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="f7fe6496-0733-456d-bb01-8233a9cc7e5a">
+    <name>ВесНеттоВлажный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес нетто влажный, кг</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="f107594e-6422-417f-9e6b-cdb931c4157b">
+    <name>ВесНеттоСухой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес нетто сухой, кг</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="0f0784bd-b42f-4186-9526-fd40e6d78399">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="0f37667b-7211-47cf-a4ad-61f1f743fe75">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="28f4c1c0-bf76-4c7e-9259-fe47b779dd94">
+    <name>ПартияПродукции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия продукции</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ПартииПродукции</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="ce5181b0-8f56-43e1-8d0c-259940ba9db3">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="3fdd7573-9aa7-46a9-8ed1-1954d8582f25">
+    <name>ТранспортировочноеМесто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортировочное место</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ТранспортировочныеМеста</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="912d65f1-fddd-4c7d-918f-bc4d347a30b2">
+    <name>СостояниеХраниния</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние храниния</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.СостоянияХранения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

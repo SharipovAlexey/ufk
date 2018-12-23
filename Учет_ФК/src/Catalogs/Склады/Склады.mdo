@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6b26706f-6db0-4c3a-8fc2-3b84c3ca7d25">
+  <producedTypes>
+    <objectType typeId="ef2dd5f5-9ec1-4a77-a369-6a8d53084928" valueTypeId="8661d7d3-7630-4769-b151-ad81da8e3a3b"/>
+    <refType typeId="a49c9820-ba5d-4b0f-b811-b43e99f41cde" valueTypeId="c75a0460-bc70-4c95-975c-9b9d3c1f6f12"/>
+    <selectionType typeId="832d7de5-94f6-456c-8566-779c3532afc4" valueTypeId="8292d0c2-4f73-49fe-9484-25349696cff4"/>
+    <listType typeId="81c99d82-1da5-481c-9ccf-2a37c07217ac" valueTypeId="2c524e5a-6db9-4533-bb64-b90c99f93d07"/>
+    <managerType typeId="8db68bb8-2a16-4d35-a478-691f818a36e4" valueTypeId="81c45395-393d-4258-a67b-7d533e62795a"/>
+  </producedTypes>
+  <name>Склады</name>
+  <synonym>
+    <key>ru</key>
+    <value>Склады</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Склады.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Склады.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Склады.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="7ecc1e19-40e5-49d1-a215-b23ad2958ebf">
+    <name>НеКонтролироватьОстаткиПродукцииПриПроведенииДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не контролировать остатки продукции при проведении документов</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="6824c5a9-38c1-470f-bb39-448afa945d81">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

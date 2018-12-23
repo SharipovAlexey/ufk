@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2f175fa8-45be-4e35-85f4-c5351c20a4ca">
+  <name>ОтключениеСеансовПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отключение сеансов пользователей</value>
+  </synonym>
+  <comment></comment>
+  <methodName>CommonModule.УправлениеСоединениямиИБ.ОтключениеСеансовПользователей</methodName>
+  <description></description>
+  <key></key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="28263521-94cf-4948-ae04-0037f5d9bef4">
+  <producedTypes>
+    <refType typeId="ce1bfe86-11f6-4e5b-8712-a1f232a9d226" valueTypeId="3dceb8a9-874b-4f0f-859d-e87b2c513ac9"/>
+    <listType typeId="d6786d92-cfb3-4e1d-b6aa-0ef7f1fe3cbe" valueTypeId="3390487d-565a-4a49-afe4-58328588492d"/>
+    <managerType typeId="ff0d1239-00c1-44dc-8d3e-932c7a2f68da" valueTypeId="93732637-b31b-4933-bd76-5650432fcc9b"/>
+  </producedTypes>
+  <name>ТипыТранспортныхСредств</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы транспортных средств</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="dd7acddb-d199-4f66-82f1-1c7ba92036fd">
+    <name>Автомобиль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автомобиль</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="2fbf2143-33ca-4324-9d73-1c1f2e0e2c73">
+    <name>ЖелезнодорожныйПолувагон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Железнодорожный полувагон</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

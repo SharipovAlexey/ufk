@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="90c31647-ccbf-42cb-a0a0-a74af4efd71c">
+  <producedTypes>
+    <selectionType typeId="36b6dcec-9566-48de-b624-40fe82aebeec" valueTypeId="70d056d9-fb4d-4593-8a85-8f55fea48f22"/>
+    <listType typeId="5efe49cf-abbc-43f6-b27e-e347050ee514" valueTypeId="cd7d0d4e-23d6-4919-a106-d67efe629ed0"/>
+    <managerType typeId="f05d22db-c7de-4a42-8889-ed88a35937b3" valueTypeId="e5d1c6ef-3651-4dc3-bd3b-ef59bb20661e"/>
+    <recordSetType typeId="8873b196-b50f-4b32-a359-c08a7907431e" valueTypeId="7393ac36-3ea1-4655-aeb6-e1d8f4aad88c"/>
+    <recordKeyType typeId="adb5bec4-b350-4e57-aac4-719cc07ed6ee" valueTypeId="91ed0034-3b6c-45a9-a4bc-ff31483d5118"/>
+    <recordType typeId="7363a8d5-8268-404a-a7bc-ed1df2bc95fc" valueTypeId="8f33417a-9127-481b-bc88-8487b8ab6cc5"/>
+    <recordManagerType typeId="f53cc06e-cf4f-4805-8ff2-f5ff946c0375" valueTypeId="5ea4b0c2-0412-492f-8ed3-14a062802825"/>
+  </producedTypes>
+  <name>ДанныеЗатаркиТранспортировочныхМест</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные затарки транспортировочных мест</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8e5f898f-b06c-4932-a2cb-a5e73ac984a3">
+    <name>Партия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ПартииПродукции</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="97dc9304-a568-4c97-a61f-1a400a60daf1">
+    <name>ВесБруттоВлажный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес брутто влажный, кг</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d4085878-97d9-4fc7-b72d-c2a5c49927d5">
+    <name>ВесНеттоВлажный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес нетто влажный, кг</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="67210bc8-6f85-4eea-980d-a3bd4d6756c5">
+    <name>НомерПломбы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер пломбы</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="e8d3f577-a1b0-40b0-8dd5-dfd9c8b988d2">
+    <name>Влажность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Влажность</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a15b9e74-fc79-49f5-8ee2-b38364da5acc">
+    <name>НомерМеста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер места</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0edcf202-a34d-4b80-b386-3afd16f103b1">
+    <name>ВесНеттоСухой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес нетто сухой, кг</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="85a4291b-2c91-452f-be69-38fc277981d4">
+    <name>ТранспортировочноеМесто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортировочное место</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ТранспортировочныеМеста</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

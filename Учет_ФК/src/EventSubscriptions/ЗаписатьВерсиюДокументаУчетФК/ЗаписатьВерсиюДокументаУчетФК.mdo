@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c1c6a59f-3a9d-47a8-84b0-2ca22fb36d77">
+  <name>ЗаписатьВерсиюДокументаУчетФК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Записать версию документа (УчетФК)</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>DocumentObject.ПаспортЛота</types>
+    <types>DocumentObject.ПаспортКачестваНаПартиюПродукции</types>
+    <types>DocumentObject.ПоступлениеПродукцииИзТранспортировки</types>
+    <types>DocumentObject.ФормированиеПартийПродукцииДляПереработки</types>
+    <types>DocumentObject.ВнутреннееПеремещениеПродукции</types>
+    <types>DocumentObject.ПаспортПартииРеализации</types>
+    <types>DocumentObject.ПередачаПродукцииВПереработку</types>
+    <types>DocumentObject.ВыпускПродукции</types>
+    <types>DocumentObject.АктПриемаПродукцииЗаПериод</types>
+    <types>DocumentObject.ПроведениеЛабораторныхИсследований</types>
+    <types>DocumentObject.СписаниеПродукции</types>
+    <types>DocumentObject.КорректировкаДвиженийРегистров</types>
+    <types>DocumentObject.ТранспортировкаПродукции</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ВерсионированиеОбъектовСобытия.ЗаписатьВерсиюДокумента</handler>
+</mdclass:EventSubscription>

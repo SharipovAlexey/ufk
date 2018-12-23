@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ffef1aa5-93e8-4941-9422-fe5e44a292f5">
+  <producedTypes>
+    <refType typeId="3de5f2cb-1215-4545-9545-8c2488c6bbf1" valueTypeId="f24b9eb1-f002-4933-9145-380fe6624984"/>
+    <listType typeId="8d6d2b02-04f5-46d8-98d4-f9cbb7228ded" valueTypeId="ce9d93bd-b003-4c70-a2d1-69ee890aca49"/>
+    <managerType typeId="19d11d15-27a2-420f-af59-d0b49f80e4e6" valueTypeId="41fa60ac-1b0c-42ee-b7f0-0f7ca53eb4fd"/>
+  </producedTypes>
+  <name>СостоянияХранения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния хранения</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="42b03483-04e2-4765-bee1-bce75830b57e">
+    <name>Хранение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранение</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="2d58d3a8-3eb4-4300-af1b-004c52ff4aac">
+    <name>Транспортировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортировка со склада</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="687c6b3f-94d6-486a-8c2c-a861d3ba70cd">
+    <name>ХранениеНекондиции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранение некондиции</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

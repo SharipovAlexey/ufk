@@ -1,0 +1,922 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПартияПродукции</dataPath>
+			<field>ПартияПродукции</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>№ партии</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Партия</dataPath>
+			<field>Партия</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Партия</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВесБруттоВлажныйРасход</dataPath>
+			<field>ВесБруттоВлажныйРасход</field>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:required>true</dcscom:required>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВесНеттоВлажныйПриход</dataPath>
+			<field>ВесНеттоВлажныйПриход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вес сырой нетто, кг</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПримесиFe</dataPath>
+			<field>ПримесиFe</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Fe, %</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВесБруттоВлажныйПриход</dataPath>
+			<field>ВесБруттоВлажныйПриход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вес сырой брутто, кг</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВесНеттоВлажныйРасход</dataPath>
+			<field>ВесНеттоВлажныйРасход</field>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПоказательТочностиСодержанияAg</dataPath>
+			<field>ПоказательТочностиСодержанияAg</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ag, ± ∆</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВлажностьПриход</dataPath>
+			<field>ВлажностьПриход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Влага, %</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПримесиCорг</dataPath>
+			<field>ПримесиCорг</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>C орг., %</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВлажностьРасход</dataPath>
+			<field>ВлажностьРасход</field>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:required>true</dcscom:required>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МестВПартииПриход</dataPath>
+			<field>МестВПартииПриход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кол-во мешков</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МестВПартииРасход</dataPath>
+			<field>МестВПартииРасход</field>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:required>true</dcscom:required>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СодержаниеAu</dataPath>
+			<field>СодержаниеAu</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Au, гр/т</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПоказательТочностиСодержанияAu</dataPath>
+			<field>ПоказательТочностиСодержанияAu</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Au, ± ∆</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СодержаниеAg</dataPath>
+			<field>СодержаниеAg</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ag, гр/т</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПримесиSобщ</dataPath>
+			<field>ПримесиSобщ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>S общ., %</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПоказательТочностиПримесиSобщ</dataPath>
+			<field>ПоказательТочностиПримесиSобщ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>S общ., ± ∆</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПоказательТочностиПримесиCорг</dataPath>
+			<field>ПоказательТочностиПримесиCорг</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>С орг., ± ∆</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПримесиAs</dataPath>
+			<field>ПримесиAs</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>As, %</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПоказательТочностиПрмесиAs</dataPath>
+			<field>ПоказательТочностиПрмесиAs</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>As, ± ∆</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПоказательТочностиПрмесиFe</dataPath>
+			<field>ПоказательТочностиПрмесиFe</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Fe, ± ∆</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВесБруттоСухойПриход</dataPath>
+			<field>ВесБруттоСухойПриход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вес сухой брутто, кг</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВесМешка</dataPath>
+			<field>ВесМешка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вес мешка, кг</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВесНеттоСухойПриход</dataPath>
+			<field>ВесНеттоСухойПриход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вес сухой нетто, кг</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МеталлAu</dataPath>
+			<field>МеталлAu</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Металл Au, гр</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МеталлAg</dataPath>
+			<field>МеталлAg</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Металл Ag, гр</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПримесиСОбщ</dataPath>
+			<field>ПримесиСОбщ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>C общ., %</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПоказательТочностиПримесиCОбщ</dataPath>
+			<field>ПоказательТочностиПримесиCОбщ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>C общ., ± ∆</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ВыпускПродукцииОбороты.Организация КАК Организация,
+	ВыпускПродукцииОбороты.ПартияПродукции КАК Партия,
+	ВыпускПродукцииОбороты.ВесБруттоВлажныйОборот КАК ВесБруттоВлажныйПриход,
+	ВыпускПродукцииОбороты.ВесБруттоВлажныйОборот КАК ВесБруттоВлажныйРасход,
+	ВыпускПродукцииОбороты.ВесНеттоВлажныйОборот КАК ВесНеттоВлажныйПриход,
+	ВыпускПродукцииОбороты.ВесНеттоВлажныйОборот КАК ВесНеттоВлажныйРасход,
+	ВыпускПродукцииОбороты.ВлажностьОборот КАК ВлажностьПриход,
+	ВыпускПродукцииОбороты.ВлажностьОборот КАК ВлажностьРасход,
+	ВыпускПродукцииОбороты.МестВПартииОборот КАК МестВПартииПриход,
+	ВыпускПродукцииОбороты.МестВПартииОборот КАК МестВПартииРасход
+ПОМЕСТИТЬ втВыпускПродукции
+ИЗ
+	РегистрНакопления.ВыпускПродукции.Обороты(&amp;НачалоПериода, &amp;КонецПериода, , ) КАК ВыпускПродукцииОбороты
+{ГДЕ
+	ВыпускПродукцииОбороты.Организация.*}
+
+ИНДЕКСИРОВАТЬ ПО
+	Партия
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втВыпускПродукции.Организация КАК Организация,
+	втВыпускПродукции.Партия КАК Партия,
+	втВыпускПродукции.ВесБруттоВлажныйПриход КАК ВесБруттоВлажныйПриход,
+	втВыпускПродукции.ВесБруттоВлажныйРасход КАК ВесБруттоВлажныйРасход,
+	втВыпускПродукции.ВесНеттоВлажныйПриход КАК ВесНеттоВлажныйПриход,
+	втВыпускПродукции.ВесНеттоВлажныйРасход КАК ВесНеттоВлажныйРасход,
+	втВыпускПродукции.ВлажностьПриход КАК ВлажностьПриход,
+	втВыпускПродукции.ВлажностьРасход КАК ВлажностьРасход,
+	втВыпускПродукции.МестВПартииПриход КАК МестВПартииПриход,
+	втВыпускПродукции.МестВПартииРасход КАК МестВПартииРасход,
+	ЕСТЬNULL(ДанныеЛабораторныхИсследований.СодержаниеAu, 0) КАК СодержаниеAu,
+	ЕСТЬNULL(ДанныеЛабораторныхИсследований.ПоказательТочностиСодержанияAu, 0) КАК ПоказательТочностиСодержанияAu,
+	ЕСТЬNULL(ДанныеЛабораторныхИсследований.СодержаниеAg, 0) КАК СодержаниеAg,
+	ЕСТЬNULL(ДанныеЛабораторныхИсследований.ПоказательТочностиСодержанияAg, 0) КАК ПоказательТочностиСодержанияAg,
+	ЕСТЬNULL(ДанныеЛабораторныхИсследований.ПримесиSобщ, 0) КАК ПримесиSобщ,
+	ЕСТЬNULL(ДанныеЛабораторныхИсследований.ПоказательТочностиПримесиSобщ, 0) КАК ПоказательТочностиПримесиSобщ,
+	0 КАК ПримесиСОбщ,
+	0 КАК ПоказательТочностиПримесиCОбщ,
+	ЕСТЬNULL(ДанныеЛабораторныхИсследований.ПримесиCорг, 0) КАК ПримесиCорг,
+	ЕСТЬNULL(ДанныеЛабораторныхИсследований.ПоказательТочностиПримесиCорг, 0) КАК ПоказательТочностиПримесиCорг,
+	ЕСТЬNULL(ДанныеЛабораторныхИсследований.ПримесиAs, 0) КАК ПримесиAs,
+	ЕСТЬNULL(ДанныеЛабораторныхИсследований.ПоказательТочностиПрмесиAs, 0) КАК ПоказательТочностиПрмесиAs,
+	ЕСТЬNULL(ДанныеЛабораторныхИсследований.ПримесиFe, 0) КАК ПримесиFe,
+	ЕСТЬNULL(ДанныеЛабораторныхИсследований.ПоказательТочностиПрмесиFe, 0) КАК ПоказательТочностиПрмесиFe,
+	втВыпускПродукции.ВесБруттоВлажныйПриход - втВыпускПродукции.ВесБруттоВлажныйПриход * втВыпускПродукции.ВлажностьПриход / 100 КАК ВесБруттоСухойПриход,
+	ВЫБОР
+		КОГДА втВыпускПродукции.МестВПартииПриход = 0
+			ТОГДА 0
+		ИНАЧЕ (втВыпускПродукции.ВесБруттоВлажныйПриход - втВыпускПродукции.ВесНеттоВлажныйПриход) / втВыпускПродукции.МестВПартииПриход
+	КОНЕЦ КАК ВесМешка,
+	втВыпускПродукции.ВесНеттоВлажныйПриход - втВыпускПродукции.ВесНеттоВлажныйПриход * втВыпускПродукции.ВлажностьПриход / 100 КАК ВесНеттоСухойПриход,
+	(втВыпускПродукции.ВесНеттоВлажныйПриход - втВыпускПродукции.ВесНеттоВлажныйПриход * втВыпускПродукции.ВлажностьПриход / 100) * ЕСТЬNULL(ДанныеЛабораторныхИсследований.СодержаниеAu, 0) / 1000 КАК МеталлAu,
+	(втВыпускПродукции.ВесНеттоВлажныйПриход - втВыпускПродукции.ВесНеттоВлажныйПриход * втВыпускПродукции.ВлажностьПриход / 100) * ЕСТЬNULL(ДанныеЛабораторныхИсследований.СодержаниеAg, 0) / 1000 КАК МеталлAg
+ИЗ
+	втВыпускПродукции КАК втВыпускПродукции
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеЛабораторныхИсследований КАК ДанныеЛабораторныхИсследований
+		ПО втВыпускПродукции.Партия = ДанныеЛабораторныхИсследований.Партия</query>
+	</dataSet>
+	<totalField>
+		<dataPath>ВесБруттоВлажныйПриход</dataPath>
+		<expression>Сумма(ВесБруттоВлажныйПриход)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВесБруттоВлажныйПриход</dataPath>
+		<expression>Сумма(ВесБруттоВлажныйПриход) / 1000</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ВесБруттоВлажныйРасход</dataPath>
+		<expression>Сумма(ВесБруттоВлажныйРасход)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВесБруттоВлажныйРасход</dataPath>
+		<expression>Сумма(ВесБруттоВлажныйРасход) / 1000</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ВесБруттоСухойПриход</dataPath>
+		<expression>Сумма(ВесБруттоСухойПриход)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВесБруттоСухойПриход</dataPath>
+		<expression>Сумма(ВесБруттоСухойПриход) / 1000</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ВесМешка</dataPath>
+		<expression>Сумма(ВесМешка)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВесМешка</dataPath>
+		<expression>Среднее(ВесМешка)</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ВесНеттоВлажныйПриход</dataPath>
+		<expression>Сумма(ВесНеттоВлажныйПриход)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВесНеттоВлажныйПриход</dataPath>
+		<expression>Сумма(ВесНеттоВлажныйПриход) / 1000</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ВесНеттоВлажныйРасход</dataPath>
+		<expression>Сумма(ВесНеттоВлажныйРасход)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВесНеттоВлажныйРасход</dataPath>
+		<expression>Сумма(ВесНеттоВлажныйРасход) / 1000</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ВесНеттоСухойПриход</dataPath>
+		<expression>Сумма(ВесНеттоСухойПриход)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВесНеттоСухойПриход</dataPath>
+		<expression>Сумма(ВесНеттоСухойПриход) / 1000</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ВлажностьПриход</dataPath>
+		<expression>Сумма(ВлажностьПриход)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВлажностьПриход</dataPath>
+		<expression>Среднее(ВлажностьПриход)</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ВлажностьРасход</dataPath>
+		<expression>Сумма(ВлажностьРасход)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВлажностьРасход</dataPath>
+		<expression>Сумма(ВлажностьРасход)</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>МестВПартииПриход</dataPath>
+		<expression>Сумма(МестВПартииПриход)</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>МестВПартииРасход</dataPath>
+		<expression>Сумма(МестВПартииРасход)</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>МеталлAg</dataPath>
+		<expression>Сумма(МеталлAg)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>МеталлAg</dataPath>
+		<expression>Сумма(МеталлAg) / 1000</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>МеталлAu</dataPath>
+		<expression>Сумма(МеталлAu)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>МеталлAu</dataPath>
+		<expression>Сумма(МеталлAu) / 1000</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ПоказательТочностиПримесиCОбщ</dataPath>
+		<expression>Сумма(ПоказательТочностиПримесиCОбщ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПоказательТочностиПримесиCОбщ</dataPath>
+		<expression>0</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ПоказательТочностиПримесиCорг</dataPath>
+		<expression>Сумма(ПоказательТочностиПримесиCорг)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПоказательТочностиПримесиCорг</dataPath>
+		<expression>0</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ПоказательТочностиПримесиSобщ</dataPath>
+		<expression>Сумма(ПоказательТочностиПримесиSобщ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПоказательТочностиПримесиSобщ</dataPath>
+		<expression>0</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ПоказательТочностиПрмесиAs</dataPath>
+		<expression>Сумма(ПоказательТочностиПрмесиAs)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПоказательТочностиПрмесиAs</dataPath>
+		<expression>0</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ПоказательТочностиПрмесиFe</dataPath>
+		<expression>Сумма(ПоказательТочностиПрмесиFe)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПоказательТочностиПрмесиFe</dataPath>
+		<expression>0</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ПоказательТочностиСодержанияAg</dataPath>
+		<expression>Сумма(ПоказательТочностиСодержанияAg)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПоказательТочностиСодержанияAg</dataPath>
+		<expression>0</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ПоказательТочностиСодержанияAu</dataPath>
+		<expression>Сумма(ПоказательТочностиСодержанияAu)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПоказательТочностиСодержанияAu</dataPath>
+		<expression>0</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ПримесиAs</dataPath>
+		<expression>Сумма(ПримесиAs)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПримесиAs</dataPath>
+		<expression>Среднее(ПримесиAs)</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ПримесиCорг</dataPath>
+		<expression>Сумма(ПримесиCорг)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПримесиCорг</dataPath>
+		<expression>Среднее(ПримесиCорг)</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ПримесиFe</dataPath>
+		<expression>Сумма(ПримесиFe)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПримесиFe</dataPath>
+		<expression>Среднее(ПримесиFe)</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ПримесиSобщ</dataPath>
+		<expression>Сумма(ПримесиSобщ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПримесиSобщ</dataPath>
+		<expression>Среднее(ПримесиSобщ)</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ПримесиСОбщ</dataPath>
+		<expression>Сумма(ПримесиСОбщ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПримесиСОбщ</dataPath>
+		<expression>Среднее(ПримесиСОбщ)</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>СодержаниеAg</dataPath>
+		<expression>Сумма(СодержаниеAg)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СодержаниеAg</dataPath>
+		<expression>Среднее(СодержаниеAg)</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>СодержаниеAu</dataPath>
+		<expression>Сумма(СодержаниеAu)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СодержаниеAu</dataPath>
+		<expression>Среднее(СодержаниеAu)</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>ПериодОтчета</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ОтчетПоПартиямЗаПериод</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отчет по партиям за период</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Партия</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВесБруттоВлажныйПриход</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВесНеттоВлажныйПриход</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВлажностьПриход</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВесБруттоСухойПриход</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>МестВПартииПриход</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВесМешка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВесНеттоСухойПриход</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СодержаниеAu</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПоказательТочностиСодержанияAu</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>МеталлAu</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СодержаниеAg</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПоказательТочностиСодержанияAg</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>МеталлAg</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПримесиSобщ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПоказательТочностиПримесиSобщ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПримесиСОбщ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПоказательТочностиПримесиCОбщ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПримесиCорг</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПоказательТочностиПримесиCорг</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПримесиAs</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПоказательТочностиПрмесиAs</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПримесиFe</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПоказательТочностиПрмесиFe</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Организация</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>45e4910d-3f1f-41cb-85c4-dd553e2ca676</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПериодОтчета</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>1a7dd772-1a15-492e-a8a7-7c887669bd5f</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Партия</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ВесБруттоВлажныйПриход</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ВесНеттоВлажныйПриход</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ВесБруттоСухойПриход</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>МестВПартииПриход</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ВесМешка</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ВесНеттоСухойПриход</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧДЦ=0</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:presentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Формат целые числа</v8:content>
+						</v8:item>
+					</dcsset:presentation>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ВлажностьПриход</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>МеталлAu</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>МеталлAg</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПоказательТочностиПримесиCОбщ</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПоказательТочностиПримесиCорг</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПоказательТочностиПримесиSобщ</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПоказательТочностиПрмесиAs</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПоказательТочностиПрмесиFe</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПоказательТочностиСодержанияAg</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПоказательТочностиСодержанияAu</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПоказательТочностиСодержанияAu</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПримесиAs</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПримесиCорг</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПримесиFe</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПримесиSобщ</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПримесиСОбщ</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СодержаниеAu</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СодержаниеAg</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧДЦ=2</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:presentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Формат точность 2 знака после запятой</v8:content>
+						</v8:item>
+					</dcsset:presentation>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчет по партиям</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

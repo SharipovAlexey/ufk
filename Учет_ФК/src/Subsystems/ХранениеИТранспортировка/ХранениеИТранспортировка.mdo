@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5ac247ba-6a64-463f-b19c-49447e012135">
+  <name>ХранениеИТранспортировка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Хранение и транспортировка</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Склад</picture>
+  </picture>
+  <content>Document.ВнутреннееПеремещениеПродукции</content>
+  <content>AccumulationRegister.ПродукцияВПути</content>
+  <content>Document.ТранспортировкаПродукции</content>
+  <content>Document.ПоступлениеПродукцииИзТранспортировки</content>
+  <content>Document.АктПриемаПродукцииЗаПериод</content>
+  <content>Document.СписаниеПродукции</content>
+  <subsystems>Отчеты</subsystems>
+</mdclass:Subsystem>

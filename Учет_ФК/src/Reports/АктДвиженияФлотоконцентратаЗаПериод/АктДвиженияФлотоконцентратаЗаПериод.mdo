@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c8e634f6-4ba5-4ab0-a785-6deffef32032">
+  <producedTypes>
+    <objectType typeId="922ed493-a6f7-4198-a11b-9e8dbe2028ed" valueTypeId="da70fe13-1a10-4414-a18f-cf721fc968c6"/>
+    <managerType typeId="656e6e14-17e5-4c5e-b6e4-a48376453dd9" valueTypeId="c11c6579-69e2-4464-a24a-83c7dfff279b"/>
+  </producedTypes>
+  <name>АктДвиженияФлотоконцентратаЗаПериод</name>
+  <synonym>
+    <key>ru</key>
+    <value>Акт движения флотоконцентрата за период</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.АктДвиженияФлотоконцентратаЗаПериод.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="0472217c-ae07-413e-9d4c-f70445e16bf2">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>
